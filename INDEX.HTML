@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="INDEX.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <img src="https://static.wixstatic.com/media/2cd43b_95d9e35a528b404ab9184704988b4974~mv2.png/v1/fill/w_254,h_254,q_90/2cd43b_95d9e35a528b404ab9184704988b4974~mv2.png" alt="" id="i1">
+     <div class="btn-group"> 
+        <button  id="l1" onmousemove="upUfo()">up</button>
+        <button id="l2"onmousemove="leftUfo()">left</button>
+        <button id="l3"onmousemove="rightUfo()">right</button>
+        <button id="l4"onmousemove="bottomUfo()">Down</button>
+     </div> 
+     <i class="fa-solid fa-gear " onclick="hidespeed()"  id="i2"></i>
+     <div class="setting  hide">
+        <label>Speed</label>
+        <input 
+        id="speed"
+        type="range" 
+        min="5" 
+        max="70"
+        onchange="speedChange()"
+        value="20"
+          >
+          <span id="value">20</span>
+     </div>
+     <script src="index.js"> </script>
+</body>
+</html>

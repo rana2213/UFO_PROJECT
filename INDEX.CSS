@@ -1,0 +1,85 @@
+*{box-sizing: border-box;}
+body{
+     background-image: url(https://i.ytimg.com/vi/K4rJZMg-lRw/maxresdefault.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.btn-group{
+       height: 250px;
+       width: 300px;
+       position: absolute;
+       left: 50%;
+       bottom: 0;
+       transform: translate(-150px);
+       display: grid;
+       grid-template-areas: 
+        "d1 l1 d2"
+        "l2 d3 l3"
+        "d4 l4 d5"
+       ;
+
+    
+}
+#l1{
+    grid-area: l1;
+}
+#l2{
+    grid-area: l2;
+}
+#l3{
+    grid-area: l3;
+}
+#l4{
+    grid-area: l4;
+}
+
+
+img{
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-90px,50px);
+    transition:all 0.1 s ease;
+
+}
+ button{
+    height: 80px;
+    width: 100px;
+    color: aqua;
+    background-color: black;
+    border: 2px dotted aqua;
+    cursor: pointer;
+} 
+i{
+    font-size: 50px;
+    color: rgb(14, 124, 226);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;   
+}
+.hide{
+    display: none;
+}
+.rotate{
+    transform: rotate( 90deg);
+}
+.setting {
+    color: rgb(14, 124, 226);
+    font-size: 30px;
+    position: absolute;
+    bottom: 23px;
+    right: 60px;
+    
+}
+ input[type=range] {
+        accent-color: rgb(14, 124, 226);
+
+      }
+  
